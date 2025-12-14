@@ -19,7 +19,7 @@ export default function ProductDetail({cartItems,setCartItems}){
         if(!itemExist){
            const newItems={product,qty};
            setCartItems((state)=> [...state,newItems]);
-           toast.info("Cart Item added succesfully");
+           toast.success("Cart Item added succesfully");
         }
     }
 
@@ -43,7 +43,7 @@ export default function ProductDetail({cartItems,setCartItems}){
                         <img
                             src={product.images[0].image}
                             alt="product"
-                            className="w-[500px] h-[500px] object-cover rounded-md"
+                            className="w-[550px] h-[600px] object-cover rounded-md"
                         />
                     </div>
 

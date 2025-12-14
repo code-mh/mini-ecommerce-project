@@ -7,7 +7,7 @@ export default function ProductCard({product}){
 
     return <div className="border rounded p-4 shadow hover:shadow-lg">
                     <img
-                        className="w-[220px] h-[230px] object-cover mx-auto"
+                        className="w-[220px] h-[260px] object-cover mx-auto"
                         src={product.images[0].image}
                         alt="product"
                     />

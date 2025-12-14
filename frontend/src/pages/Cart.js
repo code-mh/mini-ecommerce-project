@@ -39,7 +39,8 @@ export default function Cart({cartItems , setCartItems}) {
                 return true;
             }
         })
-        setCartItems(updatedItems)  
+        setCartItems(updatedItems)
+        toast.warn("Item Deleted!")
     }
 
     function placeOrderHandler() {
@@ -51,7 +52,7 @@ export default function Cart({cartItems , setCartItems}) {
         .then(()=>{
             setCartItems([]);
             setComplete(true);
-            toast.info("Order Success!");
+            toast.success("Order Success!");
         })
     }
 
