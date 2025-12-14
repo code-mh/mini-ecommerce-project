@@ -103,7 +103,7 @@ export default function ProductDetail({cartItems,setCartItems}){
                             <button
                                 type="button"
                                 id="cart_btn"
-                                className="bg-orange-500 text-white px-5 py-2 rounded cursor-pointer"
+                                className="bg-orange-500 text-white px-5 py-2 rounded cursor-pointer disabled:bg-orange-300 disabled:cursor-not-allowed"
                                 onClick={addToCart}
                                 disabled={product.stock == 0}
                             >
